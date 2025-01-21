@@ -16,10 +16,10 @@ function Footer() {
             <div className="flex flex-col space-y-4">
               <h4 className="text-lg font-semibold text-neutral-900 dark:text-white">Contact</h4>
               <a
-                href="mailto:info@bond.eu"
+                href="mailto:info@bondcommerce.store"
                 className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                info@bond.eu
+                info@bondcommerce.store
               </a>
             </div>
 
