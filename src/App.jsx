@@ -4,7 +4,7 @@ import Hero from "./components/Hero.jsx";
 import Benefits from "./components/Benefits.jsx";
 import Process from "./components/Process.jsx";
 import Pricing from "./components/Pricing.jsx";
-import Waitlist from "./components/Waitlist.jsx";
+import Demo from "./components/Demo.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -25,7 +25,7 @@ function App() {
       Benefits: !!Benefits,
       Process: !!Process,
       Pricing: !!Pricing,
-      Waitlist: !!Waitlist,
+      Demo: !!Demo,
       FAQ: !!FAQ,
       Footer: !!Footer
     });
@@ -40,7 +40,7 @@ function App() {
           <Benefits />
           <Process />
           <Pricing />
-          <Waitlist />
+          <Demo />
           <FAQ />
         </main>
         <Footer />

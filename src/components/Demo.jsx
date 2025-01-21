@@ -5,7 +5,7 @@ import { supabase } from "../supabaseClient"; // adjust as needed
 // You could refine this as needed.
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function Waitlist() {
+function Demo() {
   // State for each form field
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,8 +28,8 @@ function Waitlist() {
       return;
     }
 
-    // Insert into "waitlist" table on Supabase
-    const { data, error } = await supabase.from("waitlist").insert([
+    // Insert into "demo" table on Supabase
+    const { data, error } = await supabase.from("demo").insert([
       {
         full_name: fullName,
         email: email,
@@ -54,7 +54,7 @@ function Waitlist() {
   };
 
   return (
-    <section id="waitlist" className="bg-neutral-50 dark:bg-neutral-900 py-20">
+    <section id="demo" className="bg-neutral-50 dark:bg-neutral-900 py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-neutral-900 dark:text-white">
@@ -163,7 +163,7 @@ function Waitlist() {
             {/* Status / Error Messages */}
             {status === "success" && (
               <div className="text-center text-green-600 font-semibold">
-                Thank you! You’ve been added to our waitlist.
+                Thank you! You’ve been added to our demo.
               </div>
             )}
             {status === "error" && (
@@ -187,4 +187,4 @@ function Waitlist() {
   );
 }
 
-export default Waitlist;
+export default Demo;

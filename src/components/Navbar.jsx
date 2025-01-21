@@ -45,7 +45,7 @@ function Navbar() {
                 Pricing
               </a>
               <a
-                href="#waitlist"
+                href="#demo"
                 className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium animate__animated animate__pulse animate__infinite"
               >
                 Book Demo
@@ -113,7 +113,7 @@ function Navbar() {
               Testimonials
             </a>
             <a
-              href="#waitlist"
+              href="#demo"
               onClick={handleLinkClick}
               className="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 hover:bg-blue-700 text-center animate__animated animate__pulse animate__infinite"
             >

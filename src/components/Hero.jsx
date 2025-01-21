@@ -26,7 +26,7 @@ function Hero() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate__animated animate__fadeInUp animate__delay-2s">
             <a
-              href="#waitlist"
+              href="#demo"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transform transition hover:scale-105"
             >
               Book Demo

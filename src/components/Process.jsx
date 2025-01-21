@@ -62,7 +62,7 @@ function Process() {
 
         <div className="text-center mt-16">
           <a
-            href="#waitlist"
+            href="#demo"
             className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 animate__animated animate__pulse animate__infinite"
           >
             Start Your Journey

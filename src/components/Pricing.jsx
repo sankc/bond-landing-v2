@@ -55,7 +55,7 @@ function Pricing() {
 
               <div className="mt-8 text-center">
                 <a
-                  href="#waitlist"
+                  href="#demo"
                   className="inline-block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 animate__animated animate__pulse animate__infinite"
                 >
                   Book Demo Now
