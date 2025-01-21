@@ -1,13 +1,19 @@
-<!doctype html>
+<!-- public/index.html or root-level index.html in Vite React -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>My Bond Landing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <!-- (Optional) If using Tailwind's smooth scrolling, add a class here: -->
+    <!-- <html class="scroll-smooth"> or <body class="scroll-smooth"> -->
   </head>
   <body>
+    <!-- The root div for our React app -->
     <div id="root"></div>
+
+    <!-- Vite will inject the compiled script here in development.
+         For production builds, it uses the correct path automatically. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
