@@ -1,19 +1,16 @@
 import React, { useState } from "react";
-import { supabase } from "../supabaseClient"; // adjust as needed
+import { useTranslation } from "react-i18next";
+import { supabase } from "../supabaseClient";
 
-// Example regex for basic email format. 
-// You could refine this as needed.
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function Demo() {
-  // State for each form field
+  const { t } = useTranslation();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
-
-  // Status messages
-  const [status, setStatus] = useState(null);  // could be 'success', 'error', 'invalidEmail', or null
+  const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -21,15 +18,13 @@ function Demo() {
     setLoading(true);
     setStatus(null);
 
-    // Additional check: if email doesn't match our pattern, bail out
     if (!emailRegex.test(email)) {
       setLoading(false);
       setStatus("invalidEmail");
       return;
     }
 
-    // Insert into "demo" table on Supabase
-    const { data, error } = await supabase.from("demo").insert([
+    const { data, error } = await supabase.from("waitlist").insert([
       {
         full_name: fullName,
         email: email,
@@ -44,7 +39,6 @@ function Demo() {
       console.error(error);
       setStatus("error");
     } else {
-      // Clear form fields
       setFullName("");
       setEmail("");
       setCompany("");
@@ -58,10 +52,10 @@ function Demo() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-neutral-900 dark:text-white">
-            Join the Future of Procurement
+            {t('joinFuture')}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300">
-            Be among the first to experience the ultimate procurement office replacement
+            {t('firstToExperience')}
           </p>
         </div>
 
@@ -72,7 +66,7 @@ function Demo() {
                 htmlFor="fullName"
                 className="block text-sm font-medium text-neutral-700 dark:text-neutral-200"
               >
-                Full Name
+                {t('fullName')}
               </label>
               <input
                 type="text"
@@ -84,7 +78,7 @@ function Demo() {
                            border border-neutral-300 dark:border-neutral-600 
                            rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500
                            bg-white dark:bg-neutral-700 dark:text-white"
-                placeholder="John Doe"
+                placeholder={t('fullNamePlaceholder')}
               />
             </div>
 
@@ -93,7 +87,7 @@ function Demo() {
                 htmlFor="email"
                 className="block text-sm font-medium text-neutral-700 dark:text-neutral-200"
               >
-                Email Address
+                {t('emailAddress')}
               </label>
               <input
                 type="email"
@@ -105,7 +99,7 @@ function Demo() {
                            border border-neutral-300 dark:border-neutral-600
                            rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500
                            bg-white dark:bg-neutral-700 dark:text-white"
-                placeholder="john@company.com"
+                placeholder={t('emailPlaceholder')}
               />
             </div>
 
@@ -114,7 +108,7 @@ function Demo() {
                 htmlFor="company"
                 className="block text-sm font-medium text-neutral-700 dark:text-neutral-200"
               >
-                Company Name
+                {t('companyName')}
               </label>
               <input
                 type="text"
@@ -126,7 +120,7 @@ function Demo() {
                            border border-neutral-300 dark:border-neutral-600
                            rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500
                            bg-white dark:bg-neutral-700 dark:text-white"
-                placeholder="Your Company"
+                placeholder={t('companyPlaceholder')}
               />
             </div>
 
@@ -135,7 +129,7 @@ function Demo() {
                 htmlFor="message"
                 className="block text-sm font-medium text-neutral-700 dark:text-neutral-200"
               >
-                Message (Optional)
+                {t('messageOptional')}
               </label>
               <textarea
                 id="message"
@@ -146,7 +140,7 @@ function Demo() {
                            border border-neutral-300 dark:border-neutral-600
                            rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500
                            bg-white dark:bg-neutral-700 dark:text-white"
-                placeholder="Tell us about your procurement needs..."
+                placeholder={t('messagePlaceholder')}
               />
             </div>
 
@@ -157,28 +151,28 @@ function Demo() {
                          rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1
                          disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? "Submitting..." : "Book Demo"}
+              {loading ? t('submitting') : t('bookDemo')}
             </button>
 
-            {/* Status / Error Messages */}
+            {/* Status Messages */}
             {status === "success" && (
               <div className="text-center text-green-600 font-semibold">
-                Thank you! You’ve been added to our demo.
+                {t('successMessage')}
               </div>
             )}
             {status === "error" && (
               <div className="text-center text-red-600 font-semibold">
-                Oops! Something went wrong. Please try again.
+                {t('errorMessage')}
               </div>
             )}
             {status === "invalidEmail" && (
               <div className="text-center text-red-600 font-semibold">
-                Please enter a valid email address.
+                {t('invalidEmailMessage')}
               </div>
             )}
 
             <p className="text-center text-sm text-neutral-500 dark:text-neutral-400">
-              We respect your privacy—no spam.
+              {t('privacyNotice')}
             </p>
           </form>
         </div>

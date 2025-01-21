@@ -1,15 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Benefits() {
+  const { t } = useTranslation();
+
   return (
     <section id="benefits" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate__animated animate__fadeIn">
-            Why Choose Bond as Your Procurement Office Replacement?
+            {t('whyChooseBond')}
           </h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Experience the future of procurement management with our comprehensive solution
+            {t('experienceFuture')}
           </p>
         </div>
 
@@ -17,7 +20,6 @@ function Benefits() {
           {/* Benefit 1 */}
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
             <div className="text-blue-600 mb-4">
-              {/* Icon */}
               <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -27,17 +29,13 @@ function Benefits() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-neutral-900 mb-4">Save Up to 30% on Costs</h3>
-            <p className="text-neutral-600">
-              Our negotiation and reverse tendering system delivers substantial savings—just like a
-              procurement office replacement should.
-            </p>
+            <h3 className="text-xl font-bold text-neutral-900 mb-4">{t('saveCosts')}</h3>
+            <p className="text-neutral-600">{t('saveCostsDesc')}</p>
           </div>
 
           {/* Benefit 2 */}
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-1s">
             <div className="text-blue-600 mb-4">
-              {/* Icon */}
               <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -47,17 +45,13 @@ function Benefits() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-neutral-900 mb-4">Reduce Admin Time by 80%</h3>
-            <p className="text-neutral-600">
-              Our procurement office replacement handles every supplier and process for you,
-              streamlining operations.
-            </p>
+            <h3 className="text-xl font-bold text-neutral-900 mb-4">{t('reduceAdmin')}</h3>
+            <p className="text-neutral-600">{t('reduceAdminDesc')}</p>
           </div>
 
           {/* Benefit 3 */}
           <div className="bg-neutral-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-2s">
             <div className="text-blue-600 mb-4">
-              {/* Icon */}
               <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -67,11 +61,8 @@ function Benefits() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-neutral-900 mb-4">Eliminate In-House Team</h3>
-            <p className="text-neutral-600">
-              We are the procurement office replacement you've been waiting for—no need for an
-              internal team.
-            </p>
+            <h3 className="text-xl font-bold text-neutral-900 mb-4">{t('eliminateTeam')}</h3>
+            <p className="text-neutral-600">{t('eliminateTeamDesc')}</p>
           </div>
         </div>
       </div>
