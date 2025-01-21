@@ -58,7 +58,7 @@ function Pricing() {
                   href="#waitlist"
                   className="inline-block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 animate__animated animate__pulse animate__infinite"
                 >
-                  Join Waitlist Now
+                  Book Demo Now
                 </a>
                 <p className="mt-4 text-sm text-neutral-500">
                   A truly cost-effective procurement office replacement

@@ -29,7 +29,7 @@ function Hero() {
               href="#waitlist"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transform transition hover:scale-105"
             >
-              Join Waitlist
+              Book Demo
             </a>
             <a
               href="#process"

@@ -157,7 +157,7 @@ function Waitlist() {
                          rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1
                          disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? "Submitting..." : "Join Waitlist"}
+              {loading ? "Submitting..." : "Book Demo"}
             </button>
 
             {/* Status / Error Messages */}

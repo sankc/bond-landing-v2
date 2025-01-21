@@ -48,7 +48,7 @@ function Navbar() {
                 href="#waitlist"
                 className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium animate__animated animate__pulse animate__infinite"
               >
-                Join Waitlist
+                Book Demo
               </a>
             </div>
           </div>
@@ -117,7 +117,7 @@ function Navbar() {
               onClick={handleLinkClick}
               className="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 hover:bg-blue-700 text-center animate__animated animate__pulse animate__infinite"
             >
-              Join Waitlist
+              Book Demo
             </a>
           </div>
         </div>
