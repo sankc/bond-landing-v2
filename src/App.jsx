@@ -7,6 +7,7 @@ import Pricing from "./components/Pricing.jsx";
 import Demo from "./components/Demo.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
+import './i18n';
 
 // Loading component
 const LoadingFallback = () => (

@@ -1,7 +1,10 @@
 // src/components/Hero.jsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -11,16 +14,15 @@ function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">
-            All your procurements in one place
+            {t('heroTitle')}
             <br />
             <span className="text-blue-500">
-              Your ultimate procurement office replacement
+              {t('heroSubtitle')}
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
-            Bond is the procurement office replacement that finds and negotiates
-            the best deals—so you save time and money.
+            {t('heroDescription')}
           </p>
 
           {/* Buttons */}
@@ -29,13 +31,13 @@ function Hero() {
               href="#demo"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transform transition hover:scale-105"
             >
-              Book Demo
+              {t('bookDemo')}
             </a>
             <a
               href="#process"
               className="bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-4 px-8 rounded-lg text-lg border border-neutral-700 transform transition hover:scale-105"
             >
-              Learn More
+              {t('learnMore')}
             </a>
           </div>
 
@@ -43,15 +45,15 @@ function Hero() {
           <div className="mt-16 flex justify-center space-x-8 text-gray-400 animate__animated animate__fadeIn animate__delay-3s">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500">30%</div>
-              <div className="text-sm">Cost Savings</div>
+              <div className="text-sm">{t('costSavings')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500">80%</div>
-              <div className="text-sm">Time Saved</div>
+              <div className="text-sm">{t('timeSaved')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500">100%</div>
-              <div className="text-sm">Free to Use</div>
+              <div className="text-sm">{t('freeToUse')}</div>
             </div>
           </div>
         </div>
