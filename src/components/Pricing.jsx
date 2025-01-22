@@ -18,17 +18,17 @@ function Pricing() {
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate__animated animate__fadeIn">
             {t('pricingTitle')}
           </h2>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+          {/* <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             {t('pricingSubtitle')}
-          </p>
+          </p> */}
         </div>
 
         <div className="max-w-3xl mx-auto">
           <div className="bg-neutral-50 rounded-2xl shadow-xl overflow-hidden animate__animated animate__fadeInUp">
             <div className="bg-blue-600 p-8 text-center">
-              {/* <h3 className="text-3xl font-bold text-white mb-2">
+              <h3 className="text-3xl font-bold text-white mb-2">
                 {t('freeToUse')}
-              </h3> */}
+              </h3>
               <p className="text-blue-100">{t('noHiddenCosts')}</p>
             </div>
 
