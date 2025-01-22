@@ -8,6 +8,7 @@ import Demo from "./components/Demo.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 import './i18n';
+import DemoVideo from "./components/DemoVideo.jsx";
 
 // Loading component
 const LoadingFallback = () => (
@@ -40,6 +41,7 @@ function App() {
           <Hero />
           <Benefits />
           <Process />
+          <DemoVideo />
           <Pricing />
           <Demo />
           <FAQ />

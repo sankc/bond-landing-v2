@@ -92,7 +92,12 @@ const resources = {
             "supplierManagement": "Negociación y gestión de proveedores",
             "bestPriceGuarantee": "Garantía de mejor precio",
             "bookDemoNow": "Reservar Demo Ahora",
-            "costEffective": "Un reemplazo de oficina de compras verdaderamente rentable"
+            "costEffective": "Un reemplazo de oficina de compras verdaderamente rentable",
+
+            //Video
+            "watchDemo": "Ver la Demostración",
+            "demoDescription": "Observe cómo Bond revoluciona su proceso de compras",
+            "getStarted": "Comenzar Ahora",
 
         }
     },
@@ -188,7 +193,10 @@ const resources = {
             "bookDemoNow": "Book Demo Now",
             "costEffective": "A truly cost-effective procurement office replacement",
 
-
+            //Video
+            "watchDemo": "Watch the Demo",
+            "demoDescription": "See how Bond revolutionizes your procurement process",
+            "getStarted": "Get Started"
 
         }
     }
