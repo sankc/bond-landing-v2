@@ -16,9 +16,9 @@ const resources = {
             heroSubtitle: "Tu equipo de compras definitivo",
             heroDescription: "Bond es tu nueva oficina de compras que encuentra y negocia las mejores ofertas, para que ahorres tiempo y dinero.",
             learnMore: "Saber más",
-            costSavings: "Ahorra en gastos",
-            timeSaved: "Salva tiempo",
-            freeToUse: "Totalmente Gratis",
+            costSavings: "De ahorro",
+            timeSaved: "Menos de tiempo",
+            freeToUse: "Gratuito",
 
             // Benefits
             whyChooseBond: "¿Por qué elegir Bond como tu reemplazo de oficina de compras?",

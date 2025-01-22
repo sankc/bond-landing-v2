@@ -42,7 +42,7 @@ function Hero() {
           </div>
 
           {/* Stats */}
-          {/* <div className="mt-16 flex justify-center space-x-8 text-gray-400 animate__animated animate__fadeIn animate__delay-3s">
+          <div className="mt-16 flex justify-center space-x-8 text-gray-400 animate__animated animate__fadeIn animate__delay-3s">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500">30%</div>
               <div className="text-sm">{t('costSavings')}</div>
@@ -55,7 +55,7 @@ function Hero() {
               <div className="text-3xl font-bold text-blue-500">100%</div>
               <div className="text-sm">{t('freeToUse')}</div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
