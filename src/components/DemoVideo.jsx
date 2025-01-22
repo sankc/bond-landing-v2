@@ -22,7 +22,7 @@ function DemoVideo() {
           <div className="relative w-full overflow-hidden rounded-xl shadow-2xl bg-neutral-900" style={{ paddingTop: '56.25%' }}>
             <iframe 
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/7PGpHEC4Z8M?si=k-_gC-h1jBkoVuhS" 
+              src="https://www.youtube.com/embed/VtLM6uV1O68?si=VvE6RKnFRrL_tS7w" 
               title="Bond Demo Video"
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
